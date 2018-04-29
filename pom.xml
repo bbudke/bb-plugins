@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>13.0.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>bb-plugins</groupId>
+	<artifactId>bb-plugins</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>BB Plugins</name>
+	<url>N/A</url>
+	<inceptionYear>2018</inceptionYear>
+	<organization>
+		<name>University of Chicago</name>
+		<url>N/A</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<!-- See https://imagej.net/Team -->
+		<developer>
+			<id>bbudke</id>
+			<name>Brian Budke</name>
+			<url>N/A</url>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Brian Budke</name>
+			<url>N/A</url>
+			<roles><role>founder</role></roles>
+			<properties><id>bbudke</id></properties>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>N/A</name>
+			<archive>N/A</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/bbudke/bb-plugins</connection>
+		<developerConnection>scm:git:git@github.com:bbudke/bb-plugins</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/bbudke/bb-plugins</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/bbudke/bb-plugins</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>bb.plugins</package-name>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>Brian Budke</license.copyrightOwners>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+		</dependency>
+	</dependencies>
+	<description>A set of ImageJ2/FIJI plugins developed by Brian Budke for various commonly-used image analysis tasks.</description>
+</project>
