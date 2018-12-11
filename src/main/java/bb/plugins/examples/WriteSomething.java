@@ -2,6 +2,7 @@ package bb.plugins.examples;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.LocalTime;
 
 import org.scijava.command.Command;
 import org.scijava.log.LogService;
@@ -21,7 +22,7 @@ public class WriteSomething implements Command {
 			File.separator + "test.txt";
 	
 	private File outFile = new File(FILENAME);
-	private String data = new String("Hello");
+	private String data = new String("Hello. The time is: " + LocalTime.now());
 	
 	@Override
 	public void run() {
