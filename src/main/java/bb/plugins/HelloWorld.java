@@ -12,6 +12,7 @@ import org.scijava.ItemIO;
 import org.scijava.command.Command;
 import org.scijava.plugin.Parameter;
 import org.scijava.plugin.Plugin;
+import org.scijava.log.LogService;
 
 /**
  * A very simple plugin.
@@ -36,12 +37,15 @@ import org.scijava.plugin.Plugin;
 @Plugin(type = Command.class, headless = true, menuPath = "Plugins>BB>Hello, World!")
 public class HelloWorld implements Command {
 
-	@Parameter(label = "What is your name?")
+	@Parameter
+	private LogService log;
+	
+	@Parameter(label = "What's your name?")
 	private String name = "Brian Budke";
 
 	@Parameter(type = ItemIO.OUTPUT)
 	private String greeting;
-
+	
 	/**
 	 * Produces an output with the well-known "Hello, World!" message. The
 	 * {@code run()} method of every {@link Command} is the entry point for
@@ -51,6 +55,7 @@ public class HelloWorld implements Command {
 	@Override
 	public void run() {
 		greeting = "Hello, " + name + "!";
+		log.info("Info");
 	}
 
 }
