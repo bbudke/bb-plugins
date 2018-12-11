@@ -81,6 +81,7 @@
 		<package-name>bb.plugins</package-name>
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>Brian Budke</license.copyrightOwners>
+		<imagej.app.directory>C:\Users\Brian Budke\ImageJ2\</imagej.app.directory>
 	</properties>
 
 	<repositories>
