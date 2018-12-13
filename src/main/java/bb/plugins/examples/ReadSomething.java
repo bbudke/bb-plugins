@@ -12,7 +12,7 @@ import org.scijava.ui.UIService;
 import org.scijava.util.DigestUtils;
 import org.scijava.util.FileUtils;
 
-@Plugin(type = Command.class, headless = true, menuPath = "Plugins>BB>Examples>Read Something")
+@Plugin(type = Command.class, menuPath = "Plugins>BB>Examples>Read Something")
 public class ReadSomething implements Command {
 
 	@Parameter
