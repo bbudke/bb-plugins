@@ -40,7 +40,7 @@ public class HelloWorld implements Command {
 	@Parameter
 	private LogService log;
 	
-	@Parameter(label = "What's your name?")
+	@Parameter(label = "What's your name?", description = "Your name here")
 	private String name = "Brian Budke";
 
 	@Parameter(type = ItemIO.OUTPUT)
